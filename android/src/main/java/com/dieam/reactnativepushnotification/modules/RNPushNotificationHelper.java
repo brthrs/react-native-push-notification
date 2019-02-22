@@ -140,10 +140,6 @@ public class RNPushNotificationHelper {
                 return;
             }
 
-            // Copy default key to message attribute (Fix for sending messages via AWS SNS)
-            bundle.putString("message", bundle.getString("default"));
-            Log.d(LOG_TAG, "Current state of bundle: " + bundle);
-
             if (bundle.getString("message") == null) {
                 // this happens when a 'data' notification is received - we do not synthesize a local notification in this case
                 Log.d(LOG_TAG, "Cannot send to notification centre because there is no 'message' field in: " + bundle);
