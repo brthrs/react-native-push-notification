@@ -1,6 +1,6 @@
 # Fork details
 
-This package was forked because the push notiifcations that are send with SNS were not handled correctly. New messages were received in the native Android part but not pushed to the app itself. 
+This package was forked because the push notiifcations that are send with SNS were not handled correctly. New messages were received in the native Android part but not pushed to the app itself. - Tim Kuilman 01-05-2019
 
 
 ==============
